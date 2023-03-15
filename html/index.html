@@ -8,11 +8,173 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
     <title>Product main page</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon-32x32.png">
+    <script src="https://kit.fontawesome.com/0ecbfc1464.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 </head>
-
 <body>
-
+    <div class="wrapper">
+        <!-- header -->
+        <header class="header d-row">
+            <div class="header__left d-row">
+                <img class="header__hamburger" src="/images/icon-menu.svg" alt="open menu" tabindex="0">
+                <img class="header__logo" src="/images/logo.svg" alt="logo">
+            </div>
+            <div class="backdrop"></div>
+            <nav class="navigation" id="loading">
+                <div class="nav__close">
+                    <img class="close-img" src="/images/icon-close.svg" alt="close menu" tabindex="0">
+                </div>
+                <ul class="navigation__list">
+                    <li class="navigation__item" tabindex="0">collections</li>
+                    <li class="navigation__item" tabindex="0">men</li>
+                    <li class="navigation__item" tabindex="0">woman</li>
+                    <li class="navigation__item" tabindex="0">about</li>
+                    <li class="navigation__item" tabindex="0">Contact</li>
+                </ul>
+            </nav>
+            <div class="header__right d-row">
+                <img class="header__cart" src="/images/icon-cart.svg" alt="cart">
+                <div class="avatar__wrapper">
+                    <img class="avatar" src="/images/image-avatar.png" alt="avatar">
+                </div>
+            </div>
+        </header>
+        <!-- end of header -->
+        <!-- main  -->
+        <main class="main">
+            <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel__wrapper">
+                        <div class="carousel-item active">
+                            <img class="carousel-img" src="/images/image-product-1.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="carousel-img" src="/images/image-product-2.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="carousel-img" src="/images/image-product-3.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="carousel-img" src="/images/image-product-4.jpg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <div class="nav-icon-wrapper nav-icon-wrapper--none d-row" tabindex="0">
+                            <i class="fas fa-solid fa-chevron-left"></i>
+                        </div>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <div class="nav-icon-wrapper nav-icon-wrapper--none d-row" tabindex="0">
+                            <i class="fas fa-solid fa-chevron-right"></i>
+                        </div>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <div class="carousel-indicators indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        data-man="ssss"
+                        class="active indicators__button active indicators__button--main indicators__button--1"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" class="indicators__button indicators__button--main indicators__button--2"
+                        data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" class="indicators__button indicators__button--main indicators__button--3"
+                        data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" class="indicators__button indicators__button--main indicators__button--4"
+                        data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                </div>
+            </div>
+            <div id="carouselExampleIndicators-second" class="carousel carousel--second slide">
+                <i class="fas fa-sharp fa-regular fa-xmark"></i>
+                <div class="carousel-inner carousel-inner--second">
+                    <div class="carousel__wrapper carousel__wrapper--second">
+                        <div class="carousel-item carousel-item--second active" data-target="0">
+                            <img class="carousel-img" src="/images/image-product-1.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item carousel-item--second" data-target="1">
+                            <img class="carousel-img" src="/images/image-product-2.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item carousel-item--second" data-target="2">
+                            <img class="carousel-img" src="/images/image-product-3.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item carousel-item--second" data-target="3">
+                            <img class="carousel-img" src="/images/image-product-4.jpg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev carousel-control-prev--second" type="button"
+                        data-bs-target="#carouselExampleIndicators-second" data-bs-slide="prev">
+                        <div class="nav-icon-wrapper nav-icon-wrapper--left d-row" tabindex="0">
+                            <i class="fas fa-solid fa-chevron-left fa-chevron-left--large"></i>
+                        </div>
+                    </button>
+                    <button class="carousel-control-next carousel-control-next--second" type="button"
+                        data-bs-target="#carouselExampleIndicators-second" data-bs-slide="next">
+                        <div class="nav-icon-wrapper nav-icon-wrapper--right d-row" tabindex="0">
+                            <i class="fas fa-solid fa-chevron-right fa-chevron-right--large"></i>
+                        </div>
+                    </button>
+                </div>
+                <div class="carousel-indicators indicators">
+                    <button type="button" data-target-sec="0" data-bs-target="#carouselExampleIndicators-second"
+                        data-bs-slide-to="0" class="indicators__button indicators__button--second indicators__button--1" aria-current="true"
+                        aria-label="Slide 1"></button>
+                    <button type="button" class="indicators__button indicators__button--second indicators__button--2"
+                        data-bs-target="#carouselExampleIndicators-second" data-target-sec="1" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" class="indicators__button indicators__button--second indicators__button--3"
+                        data-bs-target="#carouselExampleIndicators-second" data-bs-slide-to="2" data-target-sec="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" class="indicators__button indicators__button--second indicators__button--4"
+                        data-bs-target="#carouselExampleIndicators-second" data-bs-slide-to="3" data-target-sec="3"
+                        aria-label="Slide 4"></button>
+                </div>
+            </div>
+            <div class="sections__wrapper">
+                <section class="product">
+                    <p class="product__company">sneaker company</p>
+                    <h2 class="product__name">fall limited edition sneakers</h2>
+                    <p class="product__description">These low-profile sneakers are your perfect casual wear companion.
+                        Featuring a
+                        durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+                </section>
+                <section class="buy">
+                    <div class="buy__conditions d-row">
+                        <div class="d-row">
+                            <p class="buy__prise">$125.00</p>
+                            <div class="discount-wrapper">
+                                <p class="buy__discount">50%</p>
+                            </div>
+                        </div>
+                        <p class="buy__regular">$250.00</p>
+                    </div>
+                    <div class="buy__buttons">
+                        <div class="buy__counter d-row">
+                            <img class="minus" src="/images/icon-minus.svg" alt="minus" tabindex="0">
+                            <p class="score">0</p>
+                            <img class="plus" src="/images/icon-plus.svg" alt="plus" tabindex="0">
+                        </div>
+                        <div class="orange-btn orange-btn--buy d-row" tabindex="0">
+                            <i class="fas fa-solid fa-cart-arrow-down"></i>
+                            <p class="add-txt">Add to cart</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- end of main  -->
+        </main>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+        crossorigin="anonymous"></script>
+    <script src="/script/js.js"></script>
 </body>
 
 </html>
