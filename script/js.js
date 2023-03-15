@@ -32,5 +32,28 @@ const addActive = (elements) => {
 closeIcon.addEventListener("click", () => removeActive(elements));
 carouselWrapper.addEventListener("click", () => addActive(elements));
 
+//second carousel
+const mainButtons = document.querySelectorAll(".indicators__button--main");
+const secondButtons = document.querySelectorAll(".indicators__button--second");
+const carouselSecondItems = document.querySelectorAll('.carousel-item--second')
+mainButtons.forEach((button) => button.addEventListener("click", setBtn));
+
+function setBtn() {
+  let target = this.dataset.bsSlideTo;
+  let carouselItem = document.querySelector(`[data-target="${target}"]`);
+  let indicatorBtn = document.querySelector(`[data-target-sec="${target}"]`);
+  addClass(carouselItem);
+  addClass(indicatorBtn);
+}
+
+function addClass(element) {
+  removeActive(carouselSecondItems)
+  removeActive(secondButtons)
+   setTimeout(() => {
+     element.classList.add("active");
+   }, 300); 
+}
+
+
 
 
