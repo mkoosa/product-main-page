@@ -15,6 +15,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 </head>
+
 <body>
     <div class="wrapper">
         <!-- header -->
@@ -26,20 +27,45 @@
             <div class="backdrop"></div>
             <nav class="navigation" id="loading">
                 <div class="nav__close">
-                    <img class="close-img" src="/images/icon-close.svg" alt="close menu" tabindex="0">
+                    <img class="close-img" src="/images/icon-close.svg" alt="close menu">
                 </div>
                 <ul class="navigation__list">
-                    <li class="navigation__item" tabindex="0">collections</li>
-                    <li class="navigation__item" tabindex="0">men</li>
-                    <li class="navigation__item" tabindex="0">woman</li>
-                    <li class="navigation__item" tabindex="0">about</li>
-                    <li class="navigation__item" tabindex="0">Contact</li>
+                    <li class="navigation__item"><span class="navigation__text">collections</span></li>
+                    <li class="navigation__item"><span class="navigation__text">men</span></li>
+                    <li class="navigation__item"><span class="navigation__text">woman</span></li>
+                    <li class="navigation__item"><span class="navigation__text">about</span></li>
+                    <li class="navigation__item"><span class="navigation__text">contact</span></li>
                 </ul>
             </nav>
             <div class="header__right d-row">
-                <img class="header__cart" src="/images/icon-cart.svg" alt="cart">
+                <div class="cart__wrapper" tabindex="0">
+                    <img class="cart__img" src="/images/icon-cart.svg" alt="cart">
+                    <div class="counter__wrapper d-row">
+                        <p class="counter">3</p>
+                    </div>
+                </div>
                 <div class="avatar__wrapper">
                     <img class="avatar" src="/images/image-avatar.png" alt="avatar">
+                </div>
+            </div>
+            <div class="basket">
+                <p class="basket__paragraph">cart</p>
+                <div class="basket__content">
+                    <div class="basket__product d-row">
+                        <img class="basket__img" src="/images/image-product-1-thumbnail.jpg" alt="shoes sneakers">
+                        <div class="basket__summary d-row">
+                            <div class="basket__details">
+                                <p class="basket__product-name">fall limited edition sneakers</p>
+                                <p class="product__price">$125.00 x2 <span class="span-price">$250</span> </p>
+                            </div>
+                            <i class="fas fa-solid fa-trash-can"></i>
+                        </div>
+                    </div>
+                    <div class="button-wrapper">
+                        <div class="orange-btn orange-btn--buy d-row" tabindex="0">
+                            <p class="checkout-txt">Checkout</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </header>
@@ -78,8 +104,7 @@
                 </div>
                 <div class="carousel-indicators indicators">
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                        data-man="ssss"
-                        class="active indicators__button indicators__button--main indicators__button--1"
+                        data-man="ssss" class="active indicators__button indicators__button--main indicators__button--1"
                         aria-current="true" aria-label="Slide 1"></button>
                     <button type="button" class="indicators__button indicators__button--main indicators__button--2"
                         data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -121,8 +146,9 @@
                 </div>
                 <div class="carousel-indicators indicators">
                     <button type="button" data-target-sec="0" data-bs-target="#carouselExampleIndicators-second"
-                        data-bs-slide-to="0" class="active indicators__button indicators__button--second indicators__button--1" aria-current="true"
-                        aria-label="Slide 1"></button>
+                        data-bs-slide-to="0"
+                        class="active indicators__button indicators__button--second indicators__button--1"
+                        aria-current="true" aria-label="Slide 1"></button>
                     <button type="button" class="indicators__button indicators__button--second indicators__button--2"
                         data-bs-target="#carouselExampleIndicators-second" data-target-sec="1" data-bs-slide-to="1"
                         aria-label="Slide 2"></button>
@@ -154,9 +180,9 @@
                     </div>
                     <div class="buy__buttons">
                         <div class="buy__counter d-row">
-                            <img class="minus" src="/images/icon-minus.svg" alt="minus" tabindex="0">
-                            <p class="score">0</p>
-                            <img class="plus" src="/images/icon-plus.svg" alt="plus" tabindex="0">
+                            <img class="buy__minus" src="/images/icon-minus.svg" alt="minus" tabindex="0">
+                            <p class="buy__amount">0</p>
+                            <img class="buy__plus" src="/images/icon-plus.svg" alt="plus" tabindex="0">
                         </div>
                         <div class="orange-btn orange-btn--buy d-row" tabindex="0">
                             <i class="fas fa-solid fa-cart-arrow-down"></i>
