@@ -14,10 +14,6 @@ html {
     font-size: 62.5%;
 }
 
-body {
-    height: 200vh;
-}
-
 p {
     margin-bottom: 0 !important;
 }
@@ -66,15 +62,16 @@ img {
     -moz-transition: opacity .3s;
     -ms-transition: opacity .3s;
     -o-transition: opacity .3s;
+    box-shadow: 0 .1rem 1rem var(--orange);
 }
 
 .orange-btn:hover {
-    opacity: .8;
-    transition: opacity .3s;
-    -webkit-transition: opacity .3s;
-    -moz-transition: opacity .3s;
-    -ms-transition: opacity .3s;
-    -o-transition: opacity .3s;
+    opacity: .7;
+    transition: all .2s;
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    -ms-transition: all .2s;
+    -o-transition: all .2s;
 }
 
 .wrapper {
@@ -223,7 +220,7 @@ img {
     z-index: 2;
 }
 
-.counter {
+.counter__product {
     width: 2rem;
     font-size: 1.3rem;
     font-weight: 600;
@@ -233,7 +230,7 @@ img {
 
 /* basket  */
 .basket {
-    height: auto;
+    height: 28rem;
     width: 90%;
     top: 0;
     left: 50%;
@@ -254,12 +251,10 @@ img {
     -ms-transform: translateX(-50%) !important;
     -o-transform: translateX(-50%) !important;
     display: none;
-
 }
 
 .basket.active {
     display: block;
-
 }
 
 .basket__paragraph {
@@ -273,7 +268,20 @@ img {
 }
 
 .basket__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 2rem;
+    font-size: 2rem;
+    color: var(--dark-grayish-blue);
+}
+
+.basket__product{
+    display: none;
+}
+
+.basket__empty{
+    padding: 4rem 0;
 }
 
 .basket__summary {
@@ -281,7 +289,8 @@ img {
 }
 
 .basket__details {
-    margin: 0 2rem;
+    text-align: center;
+    width: 19rem;
 }
 
 .basket__product-name {
@@ -291,6 +300,8 @@ img {
 .product__price {
     margin-top: 1rem;
     font-size: 1.7rem;
+    font-weight: 700;
+    opacity: .8;
 }
 
 .span-price {
@@ -314,6 +325,13 @@ img {
     letter-spacing: .1rem;
     color: var(--dark-grayish-blue);
     font-weight: 400;
+    display: none;
+}
+
+.basket__btn{
+    margin-top: 4rem;
+    width: 80%;
+    display: none;
 }
 
 .fa-trash-can {
@@ -486,6 +504,7 @@ img {
 .buy__minus,
 .buy__plus {
     cursor: pointer;
+    padding: 1rem;
 }
 
 .add-txt {
@@ -684,7 +703,7 @@ img {
         font-size: 3rem;
         position: absolute;
         right: 1rem;
-        top: -4rem;
+        top: 2rem;
         cursor: pointer;
         transition: color .2s;
         -webkit-transition: color .2s;
@@ -838,9 +857,10 @@ img {
     }
 
     .button-wrapper {
-        display: flex;
+        display: none;
         justify-content: center;
         margin-top: 2rem;
+        
     }
 
     .orange-btn--buy {
