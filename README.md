@@ -11,9 +11,7 @@ Users should be able to:
 - Switch the large product image by clicking on the small thumbnail images
 - Add items to the cart
 - View the cart and remove items from it
-
-
-## My process
+- keep item in shopping bag after refreshing page 
 
 ### Built with
 
@@ -21,15 +19,7 @@ Users should be able to:
 - CSS custom properties
 - Flexbox
 - Mobile-first workflow
-
-### What I learned
-
-
+- Bootstrap
 ## Author
-
-- Website - [](https://www.your-site.com)
 - Frontend Mentor - [@mkoosa](https://www.frontendmentor.io/profile/yourusername)
-
-
-## Acknowledgments
 
