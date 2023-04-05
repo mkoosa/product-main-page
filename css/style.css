@@ -276,21 +276,22 @@ img {
     color: var(--dark-grayish-blue);
 }
 
-.basket__product{
-    display: none;
+.basket__product {
+    justify-content: space-evenly;
+    width: 100%;
 }
 
-.basket__empty{
+.basket__empty {
     padding: 4rem 0;
 }
 
 .basket__summary {
+    margin: 0 1rem;
     justify-content: space-between;
 }
 
 .basket__details {
-    text-align: center;
-    width: 19rem;
+    text-align: left;
 }
 
 .basket__product-name {
@@ -325,13 +326,11 @@ img {
     letter-spacing: .1rem;
     color: var(--dark-grayish-blue);
     font-weight: 400;
-    display: none;
 }
 
-.basket__btn{
+.basket__btn {
     margin-top: 4rem;
     width: 80%;
-    display: none;
 }
 
 .fa-trash-can {
@@ -514,6 +513,7 @@ img {
 /* end of main */
 
 @media(min-width:600px) {
+
     .wrapper {
         padding: 0 5rem;
     }
@@ -860,7 +860,6 @@ img {
         display: none;
         justify-content: center;
         margin-top: 2rem;
-        
     }
 
     .orange-btn--buy {
