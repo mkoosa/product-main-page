@@ -1,6 +1,6 @@
 class Storage {
   constructor() {
-    this.storage = localStorage;
+    this.storage = sessionStorage;
   }
   setStorage(key, value) {
     return this.storage.setItem(key, JSON.stringify(value));
