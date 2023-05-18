@@ -20,7 +20,8 @@ let sneakers = {
   price: 125,
   quantity: 0,
   isAdded: false,
-  img: "../images/image-product-1-thumbnail.jpg",
+  // img: "../images/image-product-1-thumbnail.jpg",
+  img: "./images/image-product-1-thumbnail.jpg",
   alt: "sneakers",
 };
 
