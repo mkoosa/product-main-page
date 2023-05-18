@@ -836,19 +836,19 @@ img {
     }
 
     .indicators__button--1 {
-        background-image: url(/images/image-product-1-thumbnail.jpg);
+        background-image: url("/images/image-product-1-thumbnail.jpg");
     }
 
     .indicators__button--2 {
-        background-image: url(/images/image-product-2-thumbnail.jpg);
+        background-image: url('/images/image-product-2-thumbnail.jpg');
     }
 
     .indicators__button--3 {
-        background-image: url(/images/image-product-3-thumbnail.jpg);
+        background-image: url('/images/image-product-3-thumbnail.jpg');
     }
 
     .indicators__button--4 {
-        background-image: url(/images/image-product-4-thumbnail.jpg);
+        background-image: url("/images/image-product-4-thumbnail.jpg");
     }
 
     .buy__buttons {
