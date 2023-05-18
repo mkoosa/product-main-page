@@ -20,7 +20,7 @@ let sneakers = {
   price: 125,
   quantity: 0,
   isAdded: false,
-  img: "/images/image-product-1-thumbnail.jpg",
+  img: "../images/image-product-1-thumbnail.jpg",
   alt: "sneakers",
 };
 
@@ -93,6 +93,7 @@ function subtractProductQuantity(element) {
 }
 
 function productCounter(element) {
+  console.log(element);
   counterProduct.innerText = element.quantity;
   hideShowCounterProduct(element);
 }
@@ -112,6 +113,7 @@ function isAddedToCart(element) {
 }
 
 function addProductToCart() {
+  if(!item.item.quantity) return;
   displayBasketContent();
   sneakers.isAdded = true;
   counterProduct.style.display = "block";
@@ -142,6 +144,7 @@ function emptyBag() {
 }  
 
 function displayBasketContent() {
+  
   notEmptyBag()
   item.getProductPriceEl();
   item.getProductRemoveEl();
