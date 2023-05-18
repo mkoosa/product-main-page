@@ -21,6 +21,7 @@ const freezeSecondCarousel = () => {
 };
 
 const addActiveClass = (elements) => {
+  if(window.innerWidth<800) return;
   if (freezeSecondCarousel()) return;
   trolley.removeEventListener("click", shoWHideBasket);
   elements.forEach((element) => element.classList.add("active"));
